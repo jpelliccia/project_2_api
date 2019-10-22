@@ -1,6 +1,8 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
+  resources :sneakers, except: %i[new edit]
+  resources :brands, except: %i[new edit update destroy create]
   # RESTful routes
   resources :examples, except: %i[new edit]
 

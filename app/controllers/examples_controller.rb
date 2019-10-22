@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-class ExamplesController < OpenReadController
+class ExamplesController < ProtectedController
+  # change to ProtectedController to have a token required for each
   before_action :set_example, only: %i[update destroy]
 
   # GET /examples
