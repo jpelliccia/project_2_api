@@ -17,7 +17,7 @@ class SneakersController < ProtectedController
 
   # POST /sneakers
   def create
-    @sneaker = Sneaker.new(sneaker_params)
+    @sneaker = current_user.sneakers.build(sneaker_params)
 
     if @sneaker.save
       render json: @sneaker, status: :created, location: @sneaker
