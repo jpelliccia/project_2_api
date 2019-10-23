@@ -14,7 +14,7 @@ sneakers and sneakers belongs_to user. Stored the database using herokuapp.
 - Created a relationship between user and sneakers.
 
 
-## WireFrames / User Stories
+## ERD / User Stories
 
 ERD:
 
